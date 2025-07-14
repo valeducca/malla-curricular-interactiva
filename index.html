@@ -1,52 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Malla Curricular Interactiva</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f2f2f2; }
-    h1 { text-align: center; color: #2c3e50; }
-    .semestre { margin-bottom: 40px; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .semestre {
+      margin-bottom: 40px;
+    }
+    .semestre h2 {
+      color: #1e88e5;
+      border-bottom: 2px solid #ccc;
+    }
+    .cursos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
     .curso {
-      background-color: #4da6ff;
       padding: 15px;
       border-radius: 10px;
-      width: 200px;
-      margin: 10px;
-      display: inline-block;
+      width: 220px;
       text-align: center;
       color: white;
       font-weight: bold;
       cursor: pointer;
-      transition: background 0.3s;
     }
-    .curso:hover {
-      background-color: #0073e6;
+    .aprobado {
+      background-color: #4caf50;
+    }
+    .reprobado {
+      background-color: #e53935;
+    }
+    .pendiente {
+      background-color: #9e9e9e;
     }
   </style>
 </head>
 <body>
   <h1>Malla Curricular Educación Parvularia</h1>
 
+  <!-- SEMESTRE 1 -->
   <div class="semestre">
     <h2>Semestre 1</h2>
-    <div class="curso" onclick="alert('Asignatura: Desarrollo Infantil I\nHoras: 4\nObjetivo: Comprender el desarrollo temprano')">
-      Desarrollo Infantil I
-    </div>
-    <div class="curso" onclick="alert('Asignatura: Fundamentos de la Educación\nHoras: 3\nObjetivo: Analizar principios educativos')">
-      Fundamentos de la Educación
+    <div class="cursos">
+      <div class="curso aprobado" onclick="alert('Introducción a la Investigación Educativa\nEstado: Aprobado')">Introducción a la Investigación Educativa</div>
+      <div class="curso reprobado" onclick="alert('Diseño Curricular\nEstado: Reprobado')">Diseño Curricular</div>
+      <div class="curso aprobado" onclick="alert('Fundamentos de las Didácticas de Ciencias Sociales\nEstado: Aprobado')">Fund. Didáct. Cs. Sociales</div>
+      <div class="curso aprobado" onclick="alert('Didáctica del Lenguaje (0–3 años)\nEstado: Aprobado')">Didáctica Lenguaje (0–3 años)</div>
+      <div class="curso aprobado" onclick="alert('Educadora de Párvulos: Rol y Vocación\nEstado: Aprobado')">Educ. Párvulos: Rol y Vocación</div>
+      <div class="curso aprobado" onclick="alert('Comunicación Efectiva\nEstado: Aprobado')">Comunicación Efectiva</div>
+      <div class="curso aprobado" onclick="alert('Identidad Personal\nEstado: Aprobado')">Identidad Personal</div>
     </div>
   </div>
 
+  <!-- SEMESTRE 2 -->
   <div class="semestre">
     <h2>Semestre 2</h2>
-    <div class="curso" onclick="alert('Asignatura: Juego y Aprendizaje\nHoras: 4\nObjetivo: Aplicar el juego como estrategia educativa')">
-      Juego y Aprendizaje
+    <div class="cursos">
+      <div class="curso aprobado" onclick="alert('Psicología del Desarrollo\nEstado: Aprobado')">Psicología del Desarrollo</div>
+      <div class="curso pendiente" onclick="alert('Diseño de Procesos Evaluativos\nEstado: Pendiente')">Diseño de Procesos Evaluativos</div>
+      <div class="curso aprobado" onclick="alert('Desarrollo Didáctico de Corporalidad y Movimiento\nEstado: Aprobado')">Corp. y Movimiento</div>
+      <div class="curso aprobado" onclick="alert('Didáctica del Lenguaje (3–6 años)\nEstado: Aprobado')">Lenguaje (3–6 años)</div>
+      <div class="curso aprobado" onclick="alert('Proceso de Aprender a través del Juego\nEstado: Aprobado')">Aprender con Juego</div>
+      <div class="curso aprobado" onclick="alert('Inglés Nivel I\nEstado: Aprobado')">Inglés Nivel I</div>
     </div>
-    <div class="curso" onclick="alert('Asignatura: Didáctica General\nHoras: 3\nObjetivo: Planificar experiencias de aprendizaje')">
-      Didáctica General
+  </div>
+
+  <!-- SEMESTRE 3 -->
+  <div class="semestre">
+    <h2>Semestre 3</h2>
+    <div class="cursos">
+      <div class="curso aprobado" onclick="alert('Neurociencias y Educación\nEstado: Aprobado')">Neurociencias y Educación</div>
+      <div class="curso reprobado" onclick="alert('Desarrollo Didáctico Matemáticas (0–3 años)\nEstado: Reprobado')">Didáctica Matemáticas (0–3)</div>
+      <div class="curso aprobado" onclick="alert('Fundamentos de las Didácticas de Ciencias Naturales\nEstado: Aprobado')">Didáctica Cs. Naturales</div>
+      <div class="curso aprobado" onclick="alert('Proceso de Enseñar y Mediación\nEstado: Aprobado')">Proceso Enseñar/Mediación</div>
+      <div class="curso reprobado" onclick="alert('Antropología Filosófica\nEstado: Reprobado')">Antropología Filosófica</div>
+      <div class="curso pendiente" onclick="alert('Inglés Nivel II\nEstado: Pendiente')">Inglés Nivel II</div>
+    </div>
+  </div>
+
+  <!-- SEMESTRE 4 -->
+  <div class="semestre">
+    <h2>Semestre 4</h2>
+    <div class="cursos">
+      <div class="curso pendiente" onclick="alert('Teoría del Aprendizaje y Enseñanza\nEstado: Pendiente')">Teoría del Aprendizaje</div>
+      <div class="curso pendiente" onclick="alert('Planificación Curricular 1ra Infancia\nEstado: Pendiente')">Planif. Curricular</div>
+      <div class="curso pendiente" onclick="alert('Desarrollo Personal y Social en 1ra Infancia\nEstado: Pendiente')">Pers. Social 1ra Infancia</div>
+      <div class="curso pendiente" onclick="alert('Didáctica Matemática (3–6 años)\nEstado: Pendiente')">Didáctica Matemáticas (3–6)</div>
+      <div class="curso pendiente" onclick="alert('El Educador Investigador\nEstado: Pendiente')">Educador Investigador</div>
+      <div class="curso pendiente" onclick="alert('Apreciación de Lenguajes Artísticos\nEstado: Pendiente')">Lenguajes Artísticos</div>
+      <div class="curso pendiente" onclick="alert('Inglés Nivel III\nEstado: Pendiente')">Inglés Nivel III</div>
+    </div>
+  </div>
+
+  <!-- SEMESTRE 5 -->
+  <div class="semestre">
+    <h2>Semestre 5</h2>
+    <div class="cursos">
+      <div class="curso pendiente" onclick="alert('Liderazgo Educativo\nEstado: Pendiente')">Liderazgo Educativo</div>
+      <div class="curso pendiente" onclick="alert('Tecnología para el Aprendizaje\nEstado: Pendiente')">Tecnología Educativa</div>
+      <div class="curso pendiente" onclick="alert('Fundamentos de Arte Escénico y su Didáctica\nEstado: Pendiente')">Arte Escénico</div>
+      <div class="curso pendiente" onclick="alert('Fundamentos de la Música y su Didáctica\nEstado: Pendiente')">Música y Didáctica</div>
+      <div class="curso pendiente" onclick="alert('Educador: Didáctica y Reflexión\nEstado: Pendiente')">Didáctica y Reflexión</div>
+      <div class="curso pendiente" onclick="alert('Ética\nEstado: Pendiente')">Ética</div>
+    </div>
+  </div>
+
+  <!-- SEMESTRE 6 -->
+  <div class="semestre">
+    <h2>Semestre 6</h2>
+    <div class="cursos">
+      <div class="curso pendiente" onclick="alert('Realidad Educacional\nEstado: Pendiente')">Realidad Educacional</div>
+      <div class="curso pendiente" onclick="alert('Gestión del Clima Educacional\nEstado: Pendiente')">Clima Educacional</div>
+      <div class="curso pendiente" onclick="alert('Familia y Comunidad Educativa\nEstado: Pendiente')">Familia y Comunidad</div>
+      <div class="curso pendiente" onclick="alert('Fundamentos de Artes Visuales y Didáctica\nEstado: Pendiente')">Artes Visuales</div>
+      <div class="curso pendiente" onclick="alert('Aprendizaje, Contexto y Cultura\nEstado: Pendiente')">Aprendizaje y Cultura</div>
+      <div class="curso pendiente" onclick="alert('Persona y Trascendencia\nEstado: Pendiente')">Persona y Trascendencia</div>
+    </div>
+  </div>
+
+  <!-- SEMESTRE 7 -->
+  <div class="semestre">
+    <h2>Semestre 7</h2>
+    <div class="cursos">
+      <div class="curso pendiente" onclick="alert('Contexto Sociocultural en Educación\nEstado: Pendiente')">Contexto Sociocultural</div>
+      <div class="curso pendiente" onclick="alert('Seminario de Investigación I\nEstado: Pendiente')">Seminario I</div>
+      <div class="curso pendiente" onclick="alert('Competencias Docentes I\nEstado: Pendiente')">Competencias I</div>
+      <div class="curso pendiente" onclick="alert('Modalidades Curriculares I\nEstado: Pendiente')">Modalidades I</div>
+      <div class="curso pendiente" onclick="alert('Agente Educativo: Familia y Comunidad\nEstado: Pendiente')">Agente Educativo</div>
+    </div>
+  </div>
+
+  <!-- SEMESTRE 8 -->
+  <div class="semestre">
+    <h2>Semestre 8</h2>
+    <div class="cursos">
+      <div class="curso pendiente" onclick="alert('Educación Inclusiva\nEstado: Pendiente')">Educación Inclusiva</div>
+      <div class="curso pendiente" onclick="alert('Seminario de Investigación II\nEstado: Pendiente')">Seminario II</div>
+      <div class="curso pendiente" onclick="alert('Competencias Docentes II\nEstado: Pendiente')">Competencias II</div>
+      <div class="curso pendiente" onclick="alert('Modalidades Curriculares II\nEstado: Pendiente')">Modalidades II</div>
+      <div class="curso pendiente" onclick="alert('Integración Curricular\nEstado: Pendiente')">Integración Curricular</div>
     </div>
   </div>
 
 </body>
 </html>
+
