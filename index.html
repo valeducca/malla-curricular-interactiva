@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Malla Curricular Interactiva</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f2f2f2; }
+    h1 { text-align: center; color: #2c3e50; }
+    .semestre { margin-bottom: 40px; }
+    .curso {
+      background-color: #4da6ff;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+      margin: 10px;
+      display: inline-block;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .curso:hover {
+      background-color: #0073e6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Curricular Educación Parvularia</h1>
+
+  <div class="semestre">
+    <h2>Semestre 1</h2>
+    <div class="curso" onclick="alert('Asignatura: Desarrollo Infantil I\nHoras: 4\nObjetivo: Comprender el desarrollo temprano')">
+      Desarrollo Infantil I
+    </div>
+    <div class="curso" onclick="alert('Asignatura: Fundamentos de la Educación\nHoras: 3\nObjetivo: Analizar principios educativos')">
+      Fundamentos de la Educación
+    </div>
+  </div>
+
+  <div class="semestre">
+    <h2>Semestre 2</h2>
+    <div class="curso" onclick="alert('Asignatura: Juego y Aprendizaje\nHoras: 4\nObjetivo: Aplicar el juego como estrategia educativa')">
+      Juego y Aprendizaje
+    </div>
+    <div class="curso" onclick="alert('Asignatura: Didáctica General\nHoras: 3\nObjetivo: Planificar experiencias de aprendizaje')">
+      Didáctica General
+    </div>
+  </div>
+
+</body>
+</html>
